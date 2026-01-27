@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "titre": "Pollution plastique",
+    "type": "Plastique",
+    "description": "Déchets plastiques sur la plage",
+    "dateObservation": "2023-12-01",
+    "lieu": "Plage des Sables d'Olonne",
+    "latitude": 46.4974,
+    "longitude": -1.7831,
+    "photoUrl": "https://example.com/photos/plastique-plage.jpg"
+  },
+  {
+    "id": 2,
+    "titre": "Déversement chimique près de l'usine",
+    "type": "Chimique",
+    "description": "Liquide suspect repéré près de l'usine.",
+    "dateObservation": "2024-06-09",
+    "lieu": "Zone industrielle de Lyon",
+    "latitude": 45.764,
+    "longitude": 4.835,
+    "photoUrl": "https://example.com/photos/chimique-usine.jpg"
+  },
+  {
+    "id": 3,
+    "titre": "Dépôt sauvage en forêt",
+    "type": "Dépôt sauvage",
+    "description": "Tas de déchets ménagers abandonnés.",
+    "dateObservation": "2024-06-08",
+    "lieu": "Forêt de Fontainebleau",
+    "latitude": 48.404,
+    "longitude": 2.701,
+    "photoUrl": "https://example.com/photos/depot-foret.jpg"
+  },
+  {
+    "id": 4,
+    "titre": "Pollution de l'eau dans la rivière",
+    "type": "Eau",
+    "description": "Eau trouble et odeur désagréable.",
+    "dateObservation": "2024-06-07",
+    "lieu": "Rivière Garonne",
+    "latitude": 44.837,
+    "longitude": -0.579,
+    "photoUrl": "https://example.com/photos/eau-riviere.jpg"
+  },
+  {
+    "id": 5,
+    "titre": "Pollution de l'air en centre-ville",
+    "type": "Air",
+    "description": "Forte odeur de gaz et fumée visible.",
+    "dateObservation": "2024-06-06",
+    "lieu": "Centre-ville de Marseille",
+    "latitude": 43.296,
+    "longitude": 5.369,
+    "photoUrl": "https://example.com/photos/air-ville.jpg"
+  },
+  {
+    "id": 6,
+    "titre": "Pollution plastique dans le parc",
+    "type": "Plastique",
+    "description": "Bouteilles et sacs plastiques dispersés.",
+    "dateObservation": "2024-06-05",
+    "lieu": "Parc Monceau, Paris",
+    "latitude": 48.881,
+    "longitude": 2.309,
+    "photoUrl": "https://example.com/photos/plastique-parc.jpg"
+  },
+  {
+    "id": 7,
+    "titre": "Déversement d'huile sur la route",
+    "type": "Chimique",
+    "description": "Tache d'huile importante sur la chaussée.",
+    "dateObservation": "2024-06-04",
+    "lieu": "Route nationale 7",
+    "latitude": 45.501,
+    "longitude": 4.519,
+    "photoUrl": "https://example.com/photos/huile-route.jpg"
+  },
+  {
+    "id": 8,
+    "titre": "Dépôt sauvage près du lac",
+    "type": "Dépôt sauvage",
+    "description": "Déchets de construction abandonnés.",
+    "dateObservation": "2024-06-03",
+    "lieu": "Lac d'Annecy",
+    "latitude": 45.899,
+    "longitude": 6.128,
+    "photoUrl": "https://example.com/photos/depot-lac.jpg"
+  },
+  {
+    "id": 9,
+    "titre": "Pollution de l'eau à la plage",
+    "type": "Eau",
+    "description": "Algues et mousse suspectes sur le rivage.",
+    "dateObservation": "2024-06-02",
+    "lieu": "Plage de Biarritz",
+    "latitude": 43.483,
+    "longitude": -1.561,
+    "photoUrl": "https://example.com/photos/eau-plage.jpg"
+  },
+  {
+    "id": 10,
+    "titre": "Pollution de l'air près de l'aéroport",
+    "type": "Air",
+    "description": "Fumée noire provenant des avions.",
+    "dateObservation": "2024-06-01",
+    "lieu": "Aéroport Charles de Gaulle",
+    "latitude": 49.009,
+    "longitude": 2.547,
+    "photoUrl": "https://example.com/photos/air-aeroport.jpg"
+  },
+  {
+    "id": 11,
+    "titre": "Pollution plastique dans la rivière",
+    "type": "Plastique",
+    "description": "Déchets plastiques flottants sur l'eau.",
+    "dateObservation": "2024-05-31",
+    "lieu": "Rivière Seine",
+    "latitude": 48.856,
+    "longitude": 2.352,
+    "photoUrl": "https://example.com/photos/plastique-seine.jpg"
+  }
+]

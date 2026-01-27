@@ -1,0 +1,52 @@
+<div class="favoris-container">
+  @if (favorites$ | async; as favorites) {
+  <div class="favoris-header">
+    <button class="back-btn" (click)="goBack()">← Retour à la liste</button>
+    <h1>Mes Favoris</h1>
+    <div class="favoris-stats">
+      <span class="count">{{ favorites.length }} pollution(s) sauvegardée(s)</span>
+      @if (favorites.length > 0) {
+        <button class="clear-btn" (click)="clearAllFavorites()">Effacer tous</button>
+      }
+    </div>
+  </div>
+
+  <div class="favoris-content">
+    @if (favorites.length === 0) {
+      <div class="empty-state">
+        <div class="empty-icon">📌</div>
+        <h2>Aucun favori pour le moment</h2>
+        <p>Commencez par ajouter des pollutions à vos favoris !</p>
+        <a routerLink="/pollutions" class="go-back-link">Découvrir les pollutions</a>
+      </div>
+    } @else {
+      <div class="favoris-grid">
+        @for (pollution of favorites; track pollution.id) {
+          <div class="favoris-card">
+            @if (pollution.id) {
+              <a [routerLink]="['/pollutions', pollution.id]" class="card-link">
+                @if (pollution.photoUrl) {
+                  <img [src]="pollution.photoUrl" alt="Photo pollution" class="favoris-photo"/>
+                }
+                <div class="favoris-info">
+                  <h2>{{ pollution.titre }}</h2>
+                  <p><strong>Type :</strong> {{ pollution.type }}</p>
+                  <p><strong>Lieu :</strong> {{ pollution.lieu }}</p>
+                  <p><strong>Date :</strong> {{ pollution.dateObservation | date:'mediumDate' }}</p>
+                </div>
+              </a>
+            }
+            <button 
+              class="remove-btn"
+              (click)="removeFavorite(pollution.id)"
+              title="Retirer des favoris"
+            >
+              ✕
+            </button>
+          </div>
+        }
+      </div>
+    }
+  </div>
+  }
+</div>

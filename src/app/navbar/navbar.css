@@ -1,0 +1,239 @@
+.navbar {
+  background: linear-gradient(90deg, rgba(15, 18, 32, 0.95), rgba(11, 13, 20, 0.95));
+  border-bottom: 1px solid rgba(124, 247, 255, 0.1);
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-a);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+  flex-shrink: 0;
+}
+
+.navbar-brand:hover {
+  color: var(--accent-c);
+}
+
+/* Barre de recherche */
+.search-container {
+  position: relative;
+  flex: 1;
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 50px 10px 16px;
+  border-radius: 25px;
+  border: 1px solid rgba(124, 247, 255, 0.2);
+  background: rgba(15, 18, 32, 0.6);
+  color: var(--accent-a);
+  font-size: 0.95rem;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: rgba(124, 247, 255, 0.4);
+}
+
+.search-input:focus {
+  border-color: var(--accent-a);
+  background: rgba(15, 18, 32, 0.9);
+  box-shadow: 0 0 15px rgba(124, 247, 255, 0.2);
+}
+
+.search-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.clear-search {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: var(--accent-a);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 50%;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  line-height: 1;
+}
+
+.clear-search:hover {
+  background: rgba(124, 247, 255, 0.1);
+  color: var(--accent-c);
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-favoris,
+.btn-sign-in,
+.btn-sign-up {
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+
+.heart-icon {
+  font-size: 1.2rem;
+}
+
+.btn-favoris {
+  color: #ff6b8a;
+  border: 1px solid rgba(255, 107, 138, 0.3);
+  background: rgba(255, 107, 138, 0.05);
+}
+
+.btn-favoris:hover {
+  background: rgba(255, 107, 138, 0.15);
+  border-color: rgba(255, 107, 138, 0.6);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 6px;
+  background: #ff6b8a;
+  color: white;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.btn-sign-in {
+  color: var(--accent-a);
+  border: 1px solid rgba(124, 247, 255, 0.3);
+  background: transparent;
+}
+
+.btn-sign-in:hover {
+  background: rgba(124, 247, 255, 0.1);
+  border-color: rgba(124, 247, 255, 0.6);
+}
+
+.btn-sign-up {
+  background: linear-gradient(90deg, var(--accent-b), var(--accent-c));
+  color: #041018;
+  border: none;
+}
+
+.btn-sign-up:hover {
+  box-shadow: 0 6px 20px rgba(123, 97, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.user-greeting {
+  color: var(--accent-a);
+  font-size: 0.9rem;
+  margin-right: 8px;
+  font-weight: 500;
+}
+
+.btn-sign-out {
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  
+  /* Style spécifique rouge/orange pour la déconnexion */
+  color: #ff8e6b;
+  border: 1px solid rgba(255, 142, 107, 0.3);
+  background: transparent;
+}
+
+.btn-sign-out:hover {
+  background: rgba(255, 142, 107, 0.1);
+  border-color: rgba(255, 142, 107, 0.6);
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 16px;
+    flex-wrap: wrap;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .search-container {
+    order: 3;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 12px;
+  }
+
+  .navbar-actions {
+    order: 2;
+  }
+
+  .btn-favoris,
+  .btn-sign-in,
+  .btn-sign-up {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+
+  .navbar-actions {
+    gap: 8px;
+  }
+
+  .user-greeting {
+    display: none;
+  }
+}

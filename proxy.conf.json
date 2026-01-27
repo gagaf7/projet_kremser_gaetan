@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://apitemplate-latest-1.onrender.com",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

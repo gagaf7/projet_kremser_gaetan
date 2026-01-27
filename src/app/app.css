@@ -1,0 +1,23 @@
+/* App wrapper styles */
+main.container{
+  padding:22px;
+  border-radius:12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  box-shadow: 0 8px 40px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.03);
+  backdrop-filter: blur(6px) saturate(120%);
+}
+
+/* reset button */
+.reset button{
+  background: linear-gradient(90deg,var(--accent-b),var(--accent-a));
+  box-shadow: 0 6px 20px rgba(123,97,255,0.14), 0 0 18px rgba(124,247,255,0.06);
+  border: none;
+  color: #041018;
+  font-weight:600;
+  padding:10px 14px;
+  border-radius:10px;
+  cursor:pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.reset button:hover{ transform: translateY(-3px); box-shadow: 0 10px 30px rgba(123,97,255,0.22) }

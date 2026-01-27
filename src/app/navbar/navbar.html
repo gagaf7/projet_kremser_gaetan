@@ -1,0 +1,40 @@
+<nav class="navbar">
+  <div class="navbar-container">
+    <a routerLink="/" class="navbar-brand">Captain Miasm</a>
+    
+    <!-- Barre de recherche -->
+    <div class="search-container">
+      <input 
+        type="text" 
+        class="search-input"
+        placeholder="Rechercher une pollution..."
+        [(ngModel)]="searchTerm"
+        (input)="onSearchChange()"
+      />
+      @if (searchTerm) {
+        <button class="clear-search" (click)="clearSearch()" title="Effacer la recherche">
+          ✕
+        </button>
+      }
+    </div>
+
+    <div class="navbar-actions">
+      <a routerLink="/favoris" class="btn-favoris">
+        <span class="heart-icon">♥</span>
+        Favoris
+        <span class="badge">{{ favoritesCount }}</span>
+      </a>
+
+      <!-- Si l'utilisateur est connecté -->
+      @if (currentUser$ | async; as user) {
+        <span class="user-greeting">Bonjour, {{ user.username }}</span>
+        <button (click)="logout()" class="btn-sign-out">Sign Out</button>
+      } 
+      <!-- Sinon -->
+      @else {
+        <a routerLink="/sign-in" class="btn-sign-in">Sign In</a>
+        <a routerLink="/sign-up" class="btn-sign-up">Sign Up</a>
+      }
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,105 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 20px;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 32px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  border: 1px solid rgba(124, 247, 255, 0.1);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--accent-a);
+  font-size: 1.8rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.005));
+  border: 1px solid rgba(124, 247, 255, 0.2);
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+.form-group input::placeholder {
+  color: rgba(158, 179, 200, 0.3);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: rgba(124, 247, 255, 0.6);
+  box-shadow: 0 0 16px rgba(124, 247, 255, 0.1);
+}
+
+.error {
+  color: #ff6b8a;
+  font-size: 0.8rem;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 16px;
+  background: linear-gradient(90deg, var(--accent-b), var(--accent-c));
+  color: #041018;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(123, 97, 255, 0.3);
+}
+
+button[type="submit"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.switch-auth {
+  text-align: center;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.switch-auth a {
+  color: var(--accent-a);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.switch-auth a:hover {
+  color: var(--accent-c);
+}
