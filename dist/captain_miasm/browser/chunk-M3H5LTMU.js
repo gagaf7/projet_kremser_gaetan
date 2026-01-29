@@ -1,1 +1,0 @@
-import{b as e}from"./chunk-3YEJRNKW.js";import{Ga as r,La as n,q as t}from"./chunk-XVEGM77Z.js";var p=()=>{let o=t(n),i=t(r);return o.selectSnapshot(e.isAuthenticated)||o.selectSnapshot(e.token)?!0:i.navigate(["/sign-in"])};export{p as a};
